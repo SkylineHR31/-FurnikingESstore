@@ -1,34 +1,28 @@
 {
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "ecmaVersion": 2018,
-      "sourceType": "module"
-    },
-    "plugins": [
-      "@typescript-eslint",
-      "react-hooks"
-    ],
-    "extends": [
-      "plugin:react/recommended",
-      "plugin:@typescript-eslint/recommended",
-      "eslint-config-alloy/typescript"
-    ],
-    "rules": {
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-      "react/prop-types": "off",
-      "indent": [
-        "error",
-        2
-    ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "react-hooks"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-alloy/typescript"
+  ],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "indent": ["error", 2],
     "eqeqeq": "off",
     "curly": "error",
     "quotes": ["error", "double"]
-    },
-    "settings": {
-      "react": {
-        "pragma": "React",
-        "version": "detect"
-      }
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
     }
   }
+}

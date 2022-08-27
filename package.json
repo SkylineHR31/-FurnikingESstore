@@ -2,14 +2,17 @@
   "name": "my-app",
   "version": "0.0.1",
   "scripts": {
-    "start": "eslint ./src/ && webpack serve --open --hot",
-    "build-prod": "eslint ./src/ && webpack --mode=production",
+    "start": "prettier --write ./src/ && eslint ./src/ && webpack serve --open --hot",
+    "build-prod": "webpack --mode=production",
     "lint": "eslint ./src/",
-    "lint-fix": "eslint ./src/ --fix"
+    "lint-fix": "eslint ./src/ --fix",
+    "prettier": "prettier --write ./src/"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",
