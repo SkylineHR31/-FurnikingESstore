@@ -10,12 +10,20 @@
     ],
     "extends": [
       "plugin:react/recommended",
-      "plugin:@typescript-eslint/recommended"
+      "plugin:@typescript-eslint/recommended",
+      "eslint-config-alloy/typescript"
     ],
     "rules": {
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
-      "react/prop-types": "off"
+      "react/prop-types": "off",
+      "indent": [
+        "error",
+        2
+    ],
+    "eqeqeq": "off",
+    "curly": "error",
+    "quotes": ["error", "double"]
     },
     "settings": {
       "react": {

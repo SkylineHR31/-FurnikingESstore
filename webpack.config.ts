@@ -4,6 +4,7 @@ import { Configuration as DevServerConfiguration } from "webpack-dev-server";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 const devServer: DevServerConfiguration = {
   compress: true,
@@ -27,6 +28,7 @@ const plugins = [
   new ForkTsCheckerWebpackPlugin({
     async: false,
   }),
+  new ESLintPlugin(),
 ];
 
 const config: Configuration = {
