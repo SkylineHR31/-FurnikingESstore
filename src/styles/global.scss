@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main-header {
+  .header-currency-select {
+    .MuiSvgIcon-root {
+      position: relative;
+      left: -12px;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      border: none !important;
+    }
+  }
+
+  .header-search-bar {
+    .MuiAutocomplete {
+      &-root {
+        height: 100% !important;
+      }
+
+      &-popper {
+        top: 2px !important;
+      }
+    }
+
+    .MuiFormControl-root {
+      height: 100% !important;
+    }
+
+    .MuiInputBase-root {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      height: 100%;
+      padding-right: 10px;
+
+      .MuiOutlinedInput-notchedOutline {
+        border: none !important;
+      }
+    }
+
+    .MuiInputBase-input {
+      height: 100%;
+      padding: 0 !important;
+    }
+
+    .MuiAutocomplete-endAdornment {
+      display: none;
+    }
+  }
+
+  .header-search-select {
+    .MuiSelect-select {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
