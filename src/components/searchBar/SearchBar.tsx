@@ -13,7 +13,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import { searchBarArr } from "./api";
-import { borderColor } from "@mui/system";
 
 const SearchBar: React.FC = () => {
   const [searchSelect, setSearchSelect] = useState<string>("Categories");
@@ -51,6 +50,7 @@ const SearchBar: React.FC = () => {
           border: "none",
           height: "46px",
         }}
+        popupIcon={<ExpandMoreIcon/>}
         renderInput={(params) => <TextField {...params} />}
       />
       <Select
@@ -58,7 +58,7 @@ const SearchBar: React.FC = () => {
         labelId="searchPickerSelectLabel"
         value={searchSelect}
         onChange={searchSelectHandler}
-        IconComponent={() => <ExpandMoreIcon />}
+        IconComponent={ExpandMoreIcon}
         sx={{
           border: "none",
           color: "secondary.contrastText",
@@ -68,7 +68,7 @@ const SearchBar: React.FC = () => {
           borderLeft: "3px solid",
           borderColor: "secondary.dark",
           borderRadius: "0",
-          pl: "10px"
+          pl: "10px",
         }}
         className="header-search-select"
       >

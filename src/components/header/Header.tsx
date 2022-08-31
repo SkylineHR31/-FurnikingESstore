@@ -8,9 +8,17 @@ import {
   SelectChangeEvent,
   Link,
   Grid,
+  ButtonGroup,
+  Button,
+  Badge,
 } from "@mui/material";
+
+// icons
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
+import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 
 // components
 import SiteLogo from "../siteLogo/SiteLogo";
@@ -72,7 +80,7 @@ const Header: React.FC = () => {
                 labelId="currencyCheckerIdLabel"
                 value={currency}
                 onChange={changeCurrencyHandler}
-                IconComponent={() => <ExpandMoreIcon />}
+                IconComponent={ExpandMoreIcon}
                 sx={{
                   border: "none",
                   color: "common.white",
@@ -109,7 +117,71 @@ const Header: React.FC = () => {
           <Grid item xs={6}>
             <SearchBar></SearchBar>
           </Grid>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={3}>
+            <Box
+              sx={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "flex-end",
+              }}
+            >
+              <ButtonGroup
+                size="large"
+                variant="outlined"
+                aria-label="text button group"
+              >
+                <Button
+                  sx={{
+                    border: "none",
+                    pl: "8px",
+                    pr: "8px",
+                  }}
+                >
+                  <Badge badgeContent={2} color="primary">
+                    <ShoppingBagOutlinedIcon
+                      sx={{
+                        color: "secondary.contrastText",
+                      }}
+                      fontSize="large"
+                    />
+                  </Badge>
+                </Button>
+                <Button
+                  sx={{
+                    border: "none",
+                    pl: "8px",
+                    pr: "8px",
+                  }}
+                >
+                  <Badge>
+                    <NotificationsNoneOutlinedIcon
+                      sx={{
+                        color: "secondary.contrastText",
+                      }}
+                      fontSize="large"
+                    />
+                  </Badge>
+                </Button>
+                <Button
+                  sx={{
+                    border: "none",
+                    pl: "8px",
+                    pr: "8px",
+                  }}
+                >
+                  <Badge>
+                    <PersonOutlineOutlinedIcon
+                      sx={{
+                        color: "secondary.contrastText",
+                      }}
+                      fontSize="large"
+                    />
+                  </Badge>
+                </Button>
+                {/* перепилить на отдельный компонент и кнопки тоже, пильнуть для бейджев стейты */}
+              </ButtonGroup>
+            </Box>
+          </Grid>
         </Grid>
       </Container>
     </header>

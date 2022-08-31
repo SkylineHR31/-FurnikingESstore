@@ -2,8 +2,7 @@ import React from "react";
 import { Link, Typography } from "@mui/material";
 import { ILogo } from "./types";
 
-
-const SiteLogo: React.FC<ILogo> = ({imageUrl}) => {
+const SiteLogo: React.FC<ILogo> = ({ imageUrl }) => {
   return (
     <Link
       sx={{

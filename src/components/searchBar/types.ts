@@ -1,1 +1,3 @@
-export interface ISearchBar {}
+export interface ISearchBar {
+  type?: string;
+}

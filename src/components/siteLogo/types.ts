@@ -1,3 +1,3 @@
 export interface ILogo {
-    imageUrl: string
+  imageUrl: string;
 }

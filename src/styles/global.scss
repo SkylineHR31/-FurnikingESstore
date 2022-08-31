@@ -11,6 +11,7 @@ body {
     .MuiSvgIcon-root {
       position: relative;
       left: -12px;
+      color: white;
     }
 
     .MuiOutlinedInput-notchedOutline {
@@ -48,16 +49,19 @@ body {
       height: 100%;
       padding: 0 !important;
     }
-
-    .MuiAutocomplete-endAdornment {
-      display: none;
-    }
   }
 
   .header-search-select {
     .MuiSelect-select {
       display: flex;
       align-items: center;
+    }
+  }
+
+  .MuiButtonBase-root {
+    // Заменить на стайлед баттон, когда разнесется компонент
+    &:hover {
+      border: none !important;
     }
   }
 }
