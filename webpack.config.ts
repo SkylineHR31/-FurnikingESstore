@@ -17,6 +17,7 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     template: "./public/index.html",
+    
   }),
   new ForkTsCheckerWebpackPlugin({
     async: false,
@@ -71,6 +72,8 @@ const config: Configuration = {
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
+    assetModuleFilename: "assets/[name][ext]",
+    clean: true,
   },
   devServer,
 };
