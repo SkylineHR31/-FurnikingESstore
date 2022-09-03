@@ -50,7 +50,7 @@ const SearchBar: React.FC = () => {
           border: "none",
           height: "46px",
         }}
-        popupIcon={<ExpandMoreIcon/>}
+        popupIcon={<ExpandMoreIcon />}
         renderInput={(params) => <TextField {...params} />}
       />
       <Select

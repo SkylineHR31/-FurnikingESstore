@@ -1,5 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import { ApolloProvider } from "@apollo/client";
+import client from "./apollo/client";
 // import { Provider } from 'react-redux';
 // import { store } from './app/store';
 import App from "./App";
@@ -18,8 +20,10 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    {/* <Provider store={store}> */}
-    <App />
-    {/* </Provider> */}
+    <ApolloProvider client={client}>
+      {/* <Provider store={store}> */}
+      <App />
+      {/* </Provider> */}
+    </ApolloProvider>
   </React.StrictMode>
 );

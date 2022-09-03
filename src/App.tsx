@@ -5,6 +5,7 @@ import { Grid } from "@mui/material";
 
 // components
 import Header from "./components/header/Header";
+import HomePage from "./pages/Home";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Grid
         container
         direction="column"
-        columnSpacing={4}
+        spacing={3}
         sx={{
           fontFamily: "Rubik, sans-serif",
         }}
@@ -20,9 +21,10 @@ function App() {
         <Grid item xs={12}>
           <Header></Header>
         </Grid>
+        <Grid item xs={12}>
+          <HomePage></HomePage>
+        </Grid>
       </Grid>
-      {/* 
-      <Button color="secondary" variant="contained">Secondary</Button> */}
     </ThemeProvider>
   );
 }

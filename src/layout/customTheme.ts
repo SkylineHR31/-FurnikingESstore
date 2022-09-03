@@ -18,9 +18,9 @@ const theme = createTheme({
       default: "#E5E5E5",
     },
   },
-  spacing: [0, 4, 8, 16, 32, 64],
+  spacing: [0, 4, 8, 16, 32, 64, 98, 128],
   typography: {
-    fontFamily: ["Rubik", "sans-serif"].join(","),
+    fontFamily: ["Rubik", "Mulish", "sans-serif"].join(","),
   },
 });
 
