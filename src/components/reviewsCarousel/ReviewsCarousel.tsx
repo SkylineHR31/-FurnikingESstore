@@ -3,17 +3,21 @@ import Carousel from "react-material-ui-carousel";
 import { Box } from "@mui/material";
 import ReviewsCarouselItem from "./ReviewsCarouselItem";
 import { useQuery } from "@apollo/client";
-import { GET_REVIEWERS } from "../../apollo/usersReview";
+import { GET_REVIEWERS, IUsersData } from "../../apollo/usersReview";
 
 // assets
-import avatar from "../../assets/reviewAvatar.jpg"
+import avatar from "../../assets/reviewAvatar.jpg";
 
 const ReviewsCarousel: React.FC = () => {
-  const { loading, error, data } = useQuery(GET_REVIEWERS);
+  const { loading, error, data } = useQuery<IUsersData>(GET_REVIEWERS);
   console.log(data);
 
-  if (loading) console.log("load");
-  if (error) console.log(`${error.message}`);
+  if (loading) {
+    console.log("load");
+  }
+  if (error) {
+    console.log(`${error.message}`);
+  }
 
   return (
     <Box>

@@ -10,7 +10,7 @@ const CustomerReviewSection: React.FC = () => {
         fontFamily: "Mulish, sans-serif",
         color: "secondary.contrastText",
         mt: 4,
-        mb: 7
+        mb: 7,
       }}
     >
       <Container maxWidth="lg">

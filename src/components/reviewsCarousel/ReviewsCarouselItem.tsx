@@ -7,7 +7,6 @@ const ReviewsCarouselItem: React.FC<IReviewItem> = ({
   name,
   company,
 }) => {
-  console.log;
   return (
     <Paper
       sx={{
@@ -21,7 +20,7 @@ const ReviewsCarouselItem: React.FC<IReviewItem> = ({
         p: "80px 125px 47px",
         color: "secondary.contrastText",
         maxWidth: "820px",
-        m: "0 auto"
+        m: "0 auto",
       }}
     >
       <Avatar
