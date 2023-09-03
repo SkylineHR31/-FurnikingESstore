@@ -3,7 +3,8 @@ import Carousel from "react-material-ui-carousel";
 import { Box } from "@mui/material";
 import ReviewsCarouselItem from "./ReviewsCarouselItem";
 import { useQuery } from "@apollo/client";
-import { GET_REVIEWERS, IUsersData } from "../../apollo/usersReview";
+import { GET_REVIEWERS } from "../../apollo/usersReview";
+import { IUsersData } from "../../apollo/types";
 
 // assets
 import avatar from "../../assets/reviewAvatar.jpg";

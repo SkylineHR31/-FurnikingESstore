@@ -1,7 +1,8 @@
 # FurnikingESstore
 
 Should replace sx={} inline styles with component styles.
-I did it because I didn`t have much time.
+
+Also should add firebase as API with GraphQL + ApolloClient
 
 Futures:
 
