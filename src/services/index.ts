@@ -1,1 +1,1 @@
-export { getReviews } from "./getReviews";
+export { useReviews } from "./useReviews";
